@@ -1,47 +1,83 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>About | UNFake News</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <title>About | UNFake News</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;1,600;1,700&family=Newsreader&family=Noto+Serif&family=Shippori+Mincho:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div id="landscape">
     </div>
-    <div id="navegation"> <!--Start of main navigation--> 
+    <div id="navegation">
+        <!--Start of main navigation-->
         <header>
             <nav>
                 <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="latest-news.html">Latest-News</a></li>
-                <li><a href="be-aware.html">Be-Aware</a></li>
-                <li><a href="faq.html">F&Q</a></li>
-                <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="latest-news.html">Latest-News</a></li>
+                    <li><a href="be-aware.html">Be-Aware</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
         </header>
-    </div> <!--End of Navegation-->
-<div id="wrapper">
+    </div>
+    <!--End of Navegation-->
+    <div id="wrapper">
+        <div class="container">
+            <form action="action_page.php">
 
-</div> <!--End of wrapper-->
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-<footer> <!--Start of Footer--> 
-    <nav>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <ul>
-            <li><a href="accessibility-statement.html">Accessibility-Statement</a></li>
-            <li><a href="copyright.html">Copyright</a></li>
-            <li><a href="privacy-atatement.html">Privacy-Statement</a></li>
-        <ul id="social" class="clearfix">
-            <li><a href="https://www.fb.com"><img src="images/facebook.png" alt="Facebook icon"></a></li>
-            <li><a href="https://twitter.com"><img src="images/Twitter.png" alt="Twitter icon"></a></li>
-            <li><a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram icon"></a></li>
-        </ul>
-    </ul>
-    
-    </nav>
-</footer> <!--End of Footer-->
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="UK">UK</option>
+                    <option value="Spain">Spain</option>
+                    <option value="USA">USA</option>
+                    <option value="Other">Other</option>
+                </select>
 
-</body> <!--End of Body-->
-</html> <!--End of Page-->
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+    </div>
+    <!--End of wrapper-->
+
+    <footer>
+        <!--Start of Footer-->
+        <nav>
+
+            <ul>
+                <li><a href="accessibility-statement.html">Accessibility-Statement</a></li>
+                <li><a href="copyright.html">Copyright</a></li>
+                <li><a href="privacy-atatement.html">Privacy-Statement</a></li>
+                <ul id="social" class="clearfix">
+                    <li><a href="https://www.fb.com"><img src="images/facebook.png" alt="Facebook icon"></a></li>
+                    <li><a href="https://twitter.com"><img src="images/Twitter.png" alt="Twitter icon"></a></li>
+                    <li><a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram icon"></a></li>
+                </ul>
+            </ul>
+
+        </nav>
+    </footer>
+    <!--End of Footer-->
+
+</body>
+<!--End of Body-->
+
+</html>
+<!--End of Page-->

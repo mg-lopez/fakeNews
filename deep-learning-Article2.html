@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Latest-News | UNFake News</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;1,600;1,700&family=Newsreader&family=Noto+Serif&family=Shippori+Mincho:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="landscape">
+    </div>
+    <div id="navegation">
+        <!--Start of main navigation-->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="latest-news.html">Latest-News</a></li>
+                    <li><a href="be-aware.html">Be-Aware</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!--End of Navegation-->
+
+    <div id="wrapper-Article">
+        <h3> Limitations of deep learning-based method </h3>
+        <img src="images/latest-news2.png" width="500px" alt="Latest-News" />
+        <p>
+            <br>
+            Fake News is not something that is new however, as technology evolves and advances over time,
+            the
+            detection of Fake News also becomes more challenging as social media continues to dominate our
+            everyday lives and hence accelerating the speed of which Fake News travel at. Fake news
+            detection is
+            still a challenge even to deep learning methods such as Convolutional Neural Network (CNN),
+            Recurrent neural network (RNN), etc., because the content of fake news is planned in a way it
+            resembles the truth so as to deceive readers; and without cross referencing and fact checking,
+            it is
+            often difficult to determine veracity by text analysis alone.
+            <br>
+            <br>
+            The risk of anthropomorphizing machine learning models
+            One very real risk with contemporary AI is that of misinterpreting what deep learning models do, and
+            overestimating their abilities. A fundamental feature of the human mind is our "theory of mind", our
+            tendency to project intentions, beliefs and knowledge on the things around us. Drawing a smiley face on a
+            rock suddenly makes it "happy"—in our minds. Applied to deep learning, this means that when we are able to
+            somewhat successfully train a model to generate captions to describe pictures, for instance, we are led to
+            believe that the model "understands" the contents of the pictures, as well as the captions it generates. We
+            then proceed to be very surprised when any slight departure from the sort of images present in the training
+            data causes the model to start generating completely absurd captions.
+            <br>
+            <br>
+        </p>
+        <h3>
+            Failure of a deep learning-based image captioning system.
+        </h3>
+        <p>
+            <br>
+            In particular, this is highlighted by "adversarial examples", which are input samples to a deep learning
+            network that are designed to trick the model into misclassifying them. You are already aware that it is
+            possible to do gradient ascent in input space to generate inputs that maximize the activation of some
+            convnet filter, for instance—this was the basis of the filter visualization technique we introduced in
+            Chapter 5 (Note: of Deep Learning with Python), as well as the Deep Dream algorithm from Chapter 8.
+            Similarly, through gradient ascent, one can slightly modify an image in order to maximize the class
+            prediction for a given class. By taking a picture of a panda and adding to it a "gibbon" gradient, we can
+            get a neural network to classify this panda as a gibbon. This evidences both the brittleness of these
+            models, and the deep difference between the input-to-output mapping that they operate and our own human
+            perception.
+            <br>
+            <br>
+            An adversarial example: imperceptible changes in an image can upend a model's classification of the image.
+            <img src="images/adversarial_example.png" width="650px" />
+            <br>
+            In short, deep learning models do not have any understanding of their input, at least not in any human
+            sense. Our own understanding of images, sounds, and language, is grounded in our sensorimotor experience as
+            humans—as embodied earthly creatures. Machine learning models have no access to such experiences and thus
+            cannot "understand" their inputs in any human-relatable way. By annotating large numbers of training
+            examples to feed into our models, we get them to learn a geometric transform that maps data to human
+            concepts on this specific set of examples, but this mapping is just a simplistic sketch of the original
+            model in our minds, the one developed from our experience as embodied agents—it is like a dim image in a
+            mirror.
+            <br>
+            <br>
+            Current machine learning models: like a dim image in a mirror.
+            <img src="images/ml_model.png" width="650px" />
+            <br>
+            As a machine learning practitioner, always be mindful of this, and never fall into the trap of believing
+            that neural networks understand the task they perform—they don't, at least not in a way that would make
+            sense to us. They were trained on a different, far narrower task than the one we wanted to teach them: that
+            of merely mapping training inputs to training targets, point by point. Show them anything that deviates from
+            their training data, and they will break in the most absurd ways.
+            <br>
+            <br>
+            Local generalization versus extreme generalization
+            There just seems to be fundamental differences between the straightforward geometric morphing from input to
+            output that deep learning models do, and the way that humans think and learn. It isn't just the fact that
+            humans learn by themselves from embodied experience instead of being presented with explicit training
+            examples. Aside from the different learning processes, there is a fundamental difference in the nature of
+            the underlying representations.
+            <br>
+            <br>
+            Humans are capable of far more than mapping immediate stimuli to immediate responses, like a deep net, or
+            maybe an insect, would do. They maintain complex, abstract models of their current situation, of themselves,
+            of other people, and can use these models to anticipate different possible futures and perform long-term
+            planning. They are capable of merging together known concepts to represent something they have never
+            experienced before—like picturing a horse wearing jeans, for instance, or imagining what they would do if
+            they won the lottery. This ability to handle hypotheticals, to expand our mental model space far beyond what
+            we can experience directly, in a word, to perform abstraction and reasoning, is arguably the defining
+            characteristic of human cognition. I call it "extreme generalization": an ability to adapt to novel, never
+            experienced before situations, using very little data or even no new data at all.
+            <br>
+            <br>
+            This stands in sharp contrast with what deep nets do, which I would call "local generalization": the mapping
+            from inputs to outputs performed by deep nets quickly stops making sense if new inputs differ even slightly
+            from what they saw at training time. Consider, for instance, the problem of learning the appropriate launch
+            parameters to get a rocket to land on the moon. If you were to use a deep net for this task, whether
+            training using supervised learning or reinforcement learning, you would need to feed it with thousands or
+            even millions of launch trials, i.e. you would need to expose it to a dense sampling of the input space, in
+            order to learn a reliable mapping from input space to output space. By contrast, humans can use their power
+            of abstraction to come up with physical models—rocket science—and derive an exact solution that will get the
+            rocket on the moon in just one or few trials. Similarly, if you developed a deep net controlling a human
+            body, and wanted it to learn to safely navigate a city without getting hit by cars, the net would have to
+            die many thousands of times in various situations until it could infer that cars and dangerous, and develop
+            appropriate avoidance behaviors. Dropped into a new city, the net would have to relearn most of what it
+            knows. On the other hand, humans are able to learn safe behaviors without having to die even once—again,
+            thanks to their power of abstract modeling of hypothetical situations.
+            <img src="images/local_vs_extreme_generalization.png" width="650px" />
+            <br>
+        </p>
+    </div>
